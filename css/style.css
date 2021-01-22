@@ -1,8 +1,8 @@
 .container {
     margin-top: 8rem;
-    /*background-image: url("grass.jpg");*/
-    /*background-size: cover;*/
-    /*z-index: 0;*/
+    background-image: url("grass.jpg");
+    background-size: cover;
+    z-index: 0;
 }
 
 .hideMole {
