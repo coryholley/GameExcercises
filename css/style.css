@@ -1,9 +1,24 @@
 .container {
-    margin: 50% 50%;
+    background-image: url("grass.jpg");
+    background-size: cover;
+    z-index: 0;
 }
 
 
 .moleContainer {
-    height: 200px;
-    width: 200px;
+    min-height: 15rem;
+    max-width: 30rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.moleHole {
+    margin-bottom: 2px;
+    width: 12rem;
+    height: 4rem;
+    background-color: black;
+    border-radius: 100px / 50px;
+    z-index: 1;
 }
