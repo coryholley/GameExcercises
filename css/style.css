@@ -28,6 +28,8 @@
 }
 
 .mole {
+    background-image: url("whackamole.png");
+    background-repeat: no-repeat;
     width: 10rem;
     height: 10rem;
     z-index: 2;
