@@ -61,7 +61,7 @@
                 moleTiles.removeClass("mole");
                 // -------------------------
 
-                alert("Game Over! Score: " + score);
+                alert("Game Over!");
             }
             let spawnMole = function (timeToLive) {
                 // -------------------------
@@ -80,7 +80,7 @@
                 // -------------------------
                 // "show" the mole
                 // -------------------------
-                targetTile.addClass("mole").slideUp();
+                targetTile.addClass("mole");
                 // -------------------------
 
                 // -------------------------
