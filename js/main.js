@@ -1,8 +1,6 @@
 (function () {
     "use strict";
 
-    let moles = new Array();
-
     $(document).ready(function () {
 
         let game = function () {
@@ -10,24 +8,28 @@
             let score = 0;
             let gameTime = 20 * 1000;
             let turnTime = 1000;
-            let moleTiles = $("#gameContainer").find(".moleTile");
+            let moleTiles = $("div.moleTile");
+            console.log(moleTiles);
 
             let moleInterval;
             let moleLifeMin = 1000;
             let moleLifeMax = 3 * 1000;
+
+
 
             let getRandomInt = function (min, max) {
                 return Math.floor(Math.random() * (max - min + 1)) + min;
             }
 
 
-            moleTiles.on("click", ".moleTile", function () {
-                if (!this.hasClass("mole")) {
+            $("#gameContainer").on("click", ".moleTile", function () {
+                if (!$(this).hasClass("mole")) {
                     return;
                 }
-                this.removeClass("mole");
+                $(this).removeClass("mole");
                 score += 5;
-                console.log(score)
+                $("#score").text("Score: " + score);
+                console.log(score);
             });
 
             var startGame = function () {
@@ -78,7 +80,7 @@
                 // -------------------------
                 // "show" the mole
                 // -------------------------
-                targetTile.addClass("mole");
+                targetTile.addClass("mole").slideUp();
                 // -------------------------
 
                 // -------------------------
