@@ -6,7 +6,7 @@
         let game = function () {
 
             let score = 0;
-            let gameTime = 20 * 1000;
+            let gameTime = 50 * 1000;
             let turnTime = 1000;
             let moleTiles = $("div.moleTile");
             console.log(moleTiles);
@@ -14,8 +14,6 @@
             let moleInterval;
             let moleLifeMin = 1000;
             let moleLifeMax = 3 * 1000;
-
-
 
             let getRandomInt = function (min, max) {
                 return Math.floor(Math.random() * (max - min + 1)) + min;
