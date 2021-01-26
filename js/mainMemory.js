@@ -3,7 +3,7 @@
 
     $(document).ready(function () {
 
-        let cardImages = ['apple-alt', 'apple-alt', 'bomb', 'bomb', 'bug', 'bug', 'car-side', 'car-side', 'cat', 'cat', 'crown', 'crown', 'feather', 'feather', 'fish', 'fish', 'heart', 'heart']
+        let cardImages = ['#FF69B4', '#ff69b4', '#0000FF', '#0000FF']
 
         let cards = $(".flip-card");
         console.log(cards)
@@ -31,7 +31,7 @@
         // function start() {
 
             // The shuffle function shuffles the objects array
-            let allCards = shuffle(deck);
+            let allCards = shuffle(cardImages);
             // $deck.empty();
 
             // The game starts with no matching cards and zero moves
@@ -42,7 +42,7 @@
             // A for loop creates 16  <li> tags with the class of card for every <i> tag
             // A class of fa fa- and a name of each object from the objects=[] array
             for (let i = 0; i < allCards.length; i++) {
-                deck[i].append('<i class="fa fa-7x fa-' + allCards[i] + '"</i>');
+                deck.css('background-color', allCards[i]);
             }
             // addCardListener();
 
